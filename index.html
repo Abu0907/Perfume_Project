@@ -2,49 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perfumy — Fine Fragrances</title>
+    <meta name="description" content="Perfumy — curated selection of fine fragrances. Discover signature scents for every occasion.">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <nav>
+    <header class="site-header">
+        <div class="container header-inner">
             <h1 class="logo">Perfumy</h1>
-            <ul>
-                <li>Home |</li>
-                <li>Products |</li>
-                <li>About |</li>
-                <li>contact |</li>
-            </ul>
-        </nav>
-    </div>
-    <div class="search">
-        <input type="text" placeholder="search">
-    </div>
-    <div class="product">
-        <div class="box">
-            <img src="img/perfume1.jpg" alt="loading">
-            <p>Loreme maxime iusto officiis. Similique aspernatur, fugit sed, recusandae harum alias vel nobis suscipit, dolorum amet id. Obcaecati, quaerat sit? Aut est eveniet esse neque?</p>
+            <nav class="site-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark theme">🌙</button>
         </div>
-        <div class="box">
-            <img src="img/perfume2.jpg" alt="loading">
-            <p>Loreme maxime iusto officiis. Similique aspernatur, fugit sed, recusandae harum alias vel nobis suscipit, dolorum amet id. Obcaecati, quaerat sit? Aut est eveniet esse neque?</p>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <form class="search" role="search" aria-label="Search products">
+                <label for="search-input" class="visually-hidden">Search perfumes</label>
+                <input id="search-input" type="search" placeholder="Search perfumes, e.g. rose, citrus...">
+            </form>
+        </section>
+
+        <section id="products" class="products container" aria-label="Featured products">
+            <article class="product-card">
+                <img src="img/perfume1.jpg" alt="Signature Scent perfume bottle">
+                <h2>Signature Scent</h2>
+                <p>Soft floral notes balanced with warm amber.</p>
+            </article>
+            <article class="product-card">
+                <img src="img/perfume2.jpg" alt="Evening Classic perfume bottle">
+                <h2>Evening Classic</h2>
+                <p>Deep, spicy tones for a memorable night out.</p>
+            </article>
+            <article class="product-card">
+                <img src="img/perfume3.jpg" alt="Fresh Citrus perfume bottle">
+                <h2>Fresh Citrus</h2>
+                <p>Bright citrus top notes for everyday wear.</p>
+            </article>
+        </section>
+
+        <section id="about" class="about container">
+            <h2>About Us</h2>
+            <p>Perfumy crafts thoughtfully sourced fragrances that celebrate moments — subtle, timeless, and carefully blended for everyday elegance.</p>
+        </section>
+
+        <section id="contact" class="contact container">
+            <h2>Contact</h2>
+            <p>Phone: <a href="tel:+919076489208">+91 9076489208</a></p>
+            <p>Email: <a href="mailto:perfumepre01@gmail.com">perfumepre01@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Perfumy. All rights reserved.</p>
         </div>
-        <div class="box">
-            <img src="img/perfume3.jpg" alt="loading">
-            <p>Loreme maxime iusto officiis. Similique aspernatur, fugit sed, recusandae harum alias vel nobis suscipit, dolorum amet id. Obcaecati, quaerat sit? Aut est eveniet esse neque?</p>
-        </div>
-    </div>
-    <div class="about">
-        <h1>About Us</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ipsa dolorem autem totam qui illo? Ut inventore, culpa rem quo amet blanditiis illo eveniet at distinctio ex cumque nihil ratione incidunt exercitationem fugiat. Molestiae necessitatibus facere animi esse non a quibusdam rem voluptates ut autem eum ratione eaque blanditiis dolores doloribus eligendi earum nulla placeat possimus, officiis laborum? Minima eaque architecto deserunt! A, asperiores. Ipsum animi rerum quibusdam nam corrupti quisquam tenetur dicta, blanditiis possimus error illum impedit reiciendis repudiandae id quae vero facilis numquam odit eaque labore voluptas mollitia? Dolor laboriosam deleniti esse fugit sed ullam aperiam minima. Culpa.</p>
-    </div>
-    <div class="contact">
-        <h3>Contact</h3>
-        <h3>+91 9076489208</h3>
-        <h3>perfumepre01@gmail.com</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ullam, suscipit dolorem incidunt consectetur cupiditate deleniti explicabo culpa magnam laboriosam, doloribus ipsa temporibus commodi impedit tempora corporis. Illo, illum in dolor totam tenetur odio ipsam, maxime earum iste, vero consectetur repudiandae. Tempore praesentium, dignissimos delectus repudiandae blanditiis vitae ullam dolorum suscipit magnam, sit ut dolore, facere deleniti adipisci nulla fugiat? Quos consequuntur aliquam ipsa fugiat dignissimos dolore quasi mollitia. Deleniti nesciunt alias quos repellendus molestias iure quasi. Nulla itaque ad, harum, dolore distinctio dicta quidem deserunt accusamus eius illo velit iusto incidunt recusandae voluptatum corrupti enim. Eius eveniet esse deserunt?</p>
-    </div>
+        </footer>
+
+        <script>
+            (function(){
+                const toggle = document.getElementById('theme-toggle');
+                const root = document.documentElement;
+                function applyTheme(theme){
+                    if(theme === 'dark'){
+                        root.setAttribute('data-theme','dark');
+                        toggle.textContent = '☀️';
+                        toggle.setAttribute('aria-pressed','true');
+                    } else {
+                        root.removeAttribute('data-theme');
+                        toggle.textContent = '🌙';
+                        toggle.setAttribute('aria-pressed','false');
+                    }
+                }
+                try{
+                    const stored = localStorage.getItem('perfumy-theme');
+                    applyTheme(stored === 'dark' ? 'dark' : 'light');
+                }catch(e){}
+                toggle.addEventListener('click', ()=>{
+                    const isDark = root.getAttribute('data-theme') === 'dark';
+                    const next = isDark ? 'light' : 'dark';
+                    try{ localStorage.setItem('perfumy-theme', next); }catch(e){}
+                    applyTheme(next);
+                });
+            })();
+        </script>
 
 </body>
 </html>
